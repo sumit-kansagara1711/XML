@@ -1,2 +1,2 @@
 # XML
-xml dtd and schema files
+XML DTD and Schema files

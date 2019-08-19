@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="students">
+    <xs:complexType>
+      <xs:sequence>
+        
+        
+            <xs:element name="student">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Name" type="xs:string">
+                    <xs:complexType>
+                      <xs:attribute name="DOB" type="xs:date" use="required"></xs:attribute>
+                    </xs:complexType>
+                  </xs:element>
+
+                  <xs:element name="RegNo" type="xs:string">
+                    <xs:complexType>
+                      <xs:attribute name="AdminNo" type="xs:int" use="optional"></xs:attribute>
+                      <xs:attribute name="univ" type="xs:string" fixed="SRM-IST"></xs:attribute>
+                    </xs:complexType>
+                  </xs:element>
+
+                  <xs:element name="Batch" type="xs:string">   </xs:element>
+
+                  <xs:element name="Year" type="xs:string">
+                    <xs:complexType>
+                      <xs:attribute name="sem" type="xs:int" use="required"></xs:attribute>
+                    </xs:complexType>
+                  </xs:element>
+
+                  <xs:element name="Dept" type="xs:string">   </xs:element>
+
+                  <xs:element name="Mobile" type="xs:string">   </xs:element>
+
+                  <xs:element name="Mail" type="xs:string">   </xs:element>
+
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+        
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+      
+</xs:schema>

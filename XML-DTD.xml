@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE students [
+  <!ELEMENT student (Name,RegNo,Batch,Year,Dept,(Mobile|Mail))>
+  <!ELEMENT Name (#PCDATA)>
+  <!ELEMENT RegNo (#PCDATA)>
+  <!ELEMENT Batch (#PCDATA)>
+  <!ELEMENT Year (#PCDATA)>
+  <!ELEMENT Dept (#PCDATA)>
+  <!ELEMENT Mobile (#PCDATA)>
+  <!ELEMENT Mail (CDATA)>
+  <!ATTLIST Name DOB CDATA #REQUIRED>
+  <!ATTLIST RegNo AdminNo CDATA #IMPLIED>
+  <!ATTLIST RegNo univ CDATA #FIXED "SRM-IST">
+  <!ATTLIST Year sem CDATA #REQUIRED>
+]>
+<students>
+  <student>
+    <Name DOB="17-11-1999">John Doe</Name>
+    <RegNo univ="SRM-IST">RA1711003011336</RegNo>
+    <Batch>1</Batch>
+    <Year sem="5">3</Year>
+    <Dept>CSE</Dept>
+    <Mobile>9997607774</Mobile>
+  </student>
+  <student>
+    <Name DOB="25-06-2000">Alex Park</Name>
+    <RegNo univ="SRM-IST" AdminNo="455268701">RA1811003010656</RegNo>
+    <Batch>1</Batch>
+    <Year sem="3">2</Year>
+    <Dept>CSE</Dept>
+    <Mail>parkAlex20@gmail.com</Mail>
+  </student>
+</students>

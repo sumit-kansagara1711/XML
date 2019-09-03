@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE students [
-  <!ELEMENT student (Name,RegNo,Batch,Year,Dept,(Mobile|Mail))>
+  <!ELEMENT students (student,Name,RegNo,Batch,Year,Dept,(Mobile|Mail))>
+  <!ELEMENT student (#PCDATA)>
   <!ELEMENT Name (#PCDATA)>
   <!ELEMENT RegNo (#PCDATA)>
   <!ELEMENT Batch (#PCDATA)>
